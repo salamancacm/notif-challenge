@@ -3,15 +3,15 @@
 This repository contains a full-stack notification system with a Spring Boot backend and a React frontend for Gila Software Challenge. 
 
 # Sections
-- [Technology stack of this project](#1)
-- [Prerequisites](#2)
-- [Setting Up the Backend (Spring Boot)](#3)
-- [Using the import.sql Script](#4)
-- [Accessing the H2 Database Console](#5)
-- [Setting Up the Frontend (React)](#6)
-- [Running Backend and Frontend Simultaneously](#7)
+- [Technology stack of this project](#technology-stack-of-this-project)
+- [Prerequisites](#prerequisites)
+- [Setting Up the Backend (Spring Boot)](#setting-up-the-backend)
+- [Using the import.sql Script](#using-the-importsql-script)
+- [Accessing the H2 Database Console](#accessing-the-h2-database-console)
+- [Setting Up the Frontend (React)](#setting-up-the-frontend)
+- [Running Backend and Frontend Simultaneously](#running-backend-and-frontend-simultaneously)
 
-# Technology stack of this project {#1}
+# [Technology stack of this project]
 The stack used in this project is a modern and robust combination of technologies that allows for efficient development, testing, and deployment of both frontend and backend components. Here's a breakdown of the stack:
 
 ## Frontend:
@@ -36,14 +36,14 @@ This stack combines a solid backend framework with a flexible frontend library, 
 
 Follow the instructions below to get both the backend and frontend running locally.
 
-# Prerequisites {#2}
+# [Prerequisites]
 Before you begin, ensure you have the following installed on your machine:
 
 - Java Development Kit (JDK) 17 or higher
 - Node.js (v16 or higher) and npm (v8 or higher)
 - Maven (for building the Spring Boot project)
 
-# Setting Up the Backend (Spring Boot) {#3}
+# [Setting Up the Backend]
 - Navigate to the backend directory:
 ```
 cd backend
@@ -57,7 +57,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-# Using the import.sql Script {#4}
+# [Using the import.sql Script]
 The backend project contains an import.sql script located in the backend/src/main/resources directory. This script is automatically executed when the application starts and is used to pre-populate the H2 database with initial data.
 - Purpose of import.sql: This script allows you to define SQL statements to insert initial data into the database tables. This can include test data, predefined configurations, or any necessary setup for the application to run correctly.
 
@@ -65,7 +65,7 @@ These statements will insert a user and a category into the respective tables wh
 
 The backend will be available at http://localhost:8080.
 
-# Accessing the H2 Database Console {#5}
+# [Accessing the H2 Database Console]
 Spring Boot provides an embedded H2 database for development and testing. You can access the H2 console to view and interact with the database directly.
 - Ensure the application is running.
 - Access the H2 console in your browser with the URL: http://localhost:8080/h2-console
@@ -80,7 +80,7 @@ Click "Connect" to access the database.
 
 Use the H2 console to query the database, view tables, and manage the data.
 
-# Setting Up the Frontend (React) {#6}
+# [Setting Up the Frontend]
 - Navigate to the frontend directory:
 ```
 cd frontend
@@ -96,7 +96,7 @@ npm start
 
 The frontend will be available at http://localhost:3000.
 
-# Running Backend and Frontend Simultaneously {#7}
+# [Running Backend and Frontend Simultaneously]
 To run both the backend and frontend concurrently, follow these steps:
 - Navigate to the root directory of the repository (where this README.md is located).
 - Install concurrently globally (if not installed):
