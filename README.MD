@@ -1,6 +1,28 @@
-# Full-Stack Notification System
+# Notification System
 
 This repository contains a full-stack notification system with a Spring Boot backend and a React frontend for Gila Software Challenge. 
+
+# Technology stack of this project
+The stack used in this project is a modern and robust combination of technologies that allows for efficient development, testing, and deployment of both frontend and backend components. Here's a breakdown of the stack:
+
+## Frontend:
+- React.js: A popular JavaScript library for building user interfaces, particularly single-page applications where the user interface is highly dynamic and responsive.
+- Material-UI (MUI): A React component library that implements Google's Material Design, used to create a consistent and visually appealing user interface.
+## Backend:
+- Spring Boot: A powerful, easy-to-use framework based on Spring, used for building stand-alone, production-grade backend applications. It simplifies the creation of RESTful APIs, microservices, and web applications.
+- Java 17: The latest Long-Term Support (LTS) version of Java, providing modern language features and performance improvements.
+- Spring Data JPA: Used for simplifying the data access layer, allowing easy interaction with the H2 database through the repository pattern.
+- H2 Database: An in-memory database used for development and testing, making it easy to set up and use without requiring a persistent database.
+## Development Tools:
+- Maven: A build automation tool used for managing dependencies and building the Spring Boot backend application.
+- npm (Node Package Manager): Used for managing dependencies and scripts in the frontend React application.
+## Testing:
+- JUnit 5: The testing framework used for unit and integration tests in the backend.
+- Mockito: A popular mocking framework for Java, used for creating mock objects in tests, particularly in unit tests.
+## DevOps and Deployment:
+-Concurrent Execution: The setup includes scripts for running both the backend and frontend concurrently, streamlining the development process.
+-H2 Console: Accessible during development to view and interact with the database schema and data directly via a web-based interface.
+This stack combines a solid backend framework with a flexible frontend library, ensuring that the project is scalable, maintainable, and easy to develop and test.
 
 Follow the instructions below to get both the backend and frontend running locally.
 
