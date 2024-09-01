@@ -39,7 +39,7 @@ Before you begin, ensure you have the following installed on your machine:
 ```
 cd backend
 ```
-- Install dependencies and package the application:
+- Install dependencies and package the application (this step also run the tests):
 ```
 mvn clean install
 ```

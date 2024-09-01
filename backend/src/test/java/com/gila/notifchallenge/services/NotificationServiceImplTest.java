@@ -122,9 +122,12 @@ class NotificationServiceImplTest {
                 .email("user@example.com")
                 .notificationChannels(Arrays.asList(Channel.PUSH_NOTIFICATION, Channel.SMS))
                 .build();
+
         when(userRepository.findBySubscribedCategoriesContains(Category.SPORTS)).thenReturn(Collections.singletonList(user));
         when(messageRepository.save(any(Message.class))).thenAnswer(i -> i.getArgument(0));
-        doThrow(new IllegalArgumentException("Unsupported channel: SMS")).when(smsStrategy).sendNotification(any(User.class), any(Message.class));
+
+        doThrow(new IllegalArgumentException("Unsupported channel: SMS"))
+                .when(smsStrategy).sendNotification(any(User.class), any(Message.class));
 
         notificationService.sendMessage(categoryStr, content);
 
@@ -133,6 +136,7 @@ class NotificationServiceImplTest {
         verify(messageRepository).save(messageCaptor.capture());
         verify(notificationLogRepository, times(1)).save(any(NotificationLog.class));
     }
+
 
     @Test
     void getAllLogs_returnsLogs() {
