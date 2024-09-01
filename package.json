@@ -1,0 +1,11 @@
+{
+    "name": "gila-notification-system",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "concurrently \"cd backend && mvn spring-boot:run\" \"cd .. \" \"npm start --prefix frontend\""
+    },
+    "dependencies": {
+      "concurrently": "^6.4.0"
+    }
+  }
+  
