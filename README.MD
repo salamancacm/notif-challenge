@@ -103,7 +103,7 @@ To run both the backend and frontend concurrently, follow these steps:
 ```
 npm install -g concurrently
 ```
-- Make sure you already run **npm install** in ***/frontend*** folder
+- Make sure you already run **mvn clean install** in **/backend** folder and **npm install** in ***/frontend*** folder
 - Run both applications:
 ```
 npm start
